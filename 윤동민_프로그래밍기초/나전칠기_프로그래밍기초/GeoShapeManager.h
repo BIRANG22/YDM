@@ -1,5 +1,7 @@
 #pragma once
 #include "INC_Windows.h"
+#include <iostream>
+#include <math.h>
 
 namespace simplegeo
 {
@@ -8,6 +10,7 @@ namespace simplegeo
     public:
         virtual void Draw(HDC hdc) = 0;
         virtual ~ShapeBase() {}
+        //virtual bool Contains(int x, int y) { return 0; }
     };
 
     class Circle : public ShapeBase
@@ -34,6 +37,13 @@ namespace simplegeo
             SelectObject(hdc, hOldBrush);
             DeleteObject(hPen);
         }
+        bool Contains(int x, int y) const
+        {
+            int dx = x - m_centerX;
+            int dy = y - m_centerY;
+            int distanceSquared = sqrt(dx * dx + dy * dy);
+            return distanceSquared < (2 * m_radius);
+        }
     private:
         int m_centerX, m_centerY, m_radius;
         COLORREF m_color;
@@ -59,7 +69,22 @@ namespace simplegeo
             SelectObject(hdc, hOldBrush);
             DeleteObject(hPen);
         }
-
+        bool Contains(int x1, int y1, int x2, int y2) const
+        {
+            /*int dx = x - (m_right - m_left);
+            int dy = y - (m_bottom - m_top);
+            int distanceSquared = sqrt(dx * dx + dy * dy);
+            return distanceSquared < (2 * m_left);*/
+            return (x2 >= m_left && x1 <= m_right &&
+                y2 >= m_top && y1 <= m_bottom);
+        }
+        /*bool IsOverlapping(int x1, int y1, int x2, int y2) const
+        {
+            return !(x2 < m_left ||
+                x1 > m_right ||
+                y2 < m_top ||
+                y1 > m_bottom);
+        }*/
     private:
         int m_left, m_top, m_right, m_bottom;
         COLORREF m_color;
@@ -128,6 +153,50 @@ namespace simplegeo
 
             m_shapes[m_shapeCount] = new Line(startX, startY, endX, endY, color);
             ++m_shapeCount;
+        }
+
+        void Remove(int x, int y)
+        {
+            for (int i = 0; i < m_shapeCount; ++i)
+            {
+                RectangleShape* rect = dynamic_cast<RectangleShape*>(m_shapes[i]);
+                Circle* circle = dynamic_cast<Circle*>(m_shapes[i]);
+                
+                if (circle && circle->Contains(x, y) || rect && rect->Contains(x-10, y-10, x + 10, y + 10))
+                {
+                    delete m_shapes[i];
+
+                    // 앞으로 당기기
+                    for (int j = i; j < m_shapeCount - 1; ++j)
+                    {
+                        m_shapes[j] = m_shapes[j + 1];
+                    }
+
+                    m_shapes[m_shapeCount - 1] = nullptr;
+                    --m_shapeCount;
+
+                    --i;
+                    //return; // 하나만 삭제
+                }
+            }
+            
+
+            //for (int i = 0; i < m_shapeCount; ++i)
+            //{
+            //    
+            //    
+            //        delete m_shapes[i];
+
+            //        // 앞으로 땡기기
+            //        for (int j = i; j < m_shapeCount - 1; ++j)
+            //            m_shapes[j] = m_shapes[j + 1];
+
+            //        m_shapes[m_shapeCount - 1] = nullptr;
+            //        --m_shapeCount;
+            //        std::cout << "bb";
+            //        return; // 한 개만 제거하고 끝
+            //    
+            //}
         }
 
         void Draw(HDC hdc)

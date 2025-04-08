@@ -1,2 +1,10 @@
-﻿  연습장.cpp
-  나전칠기_프로그래밍기초.vcxproj -> C:\Users\User\Desktop\1\프로그래밍기초_과제\GDIGame\윤동민_프로그래밍기초\x64\Debug\나전칠기_프로그래밍기초.exe
+﻿  GeoShapeManager.cpp
+C:\MyCode\YDM\윤동민_프로그래밍기초\나전칠기_프로그래밍기초\GeoShapeManager.h(44,33): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'GeoShapeManager.cpp'을(를) 컴파일하는 중)
+  
+  연습장.cpp
+C:\MyCode\YDM\윤동민_프로그래밍기초\나전칠기_프로그래밍기초\GeoShapeManager.h(44,33): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '연습장.cpp'을(를) 컴파일하는 중)
+  
+  코드를 생성하고 있습니다...
+  나전칠기_프로그래밍기초.vcxproj -> C:\MyCode\YDM\윤동민_프로그래밍기초\x64\Debug\나전칠기_프로그래밍기초.exe

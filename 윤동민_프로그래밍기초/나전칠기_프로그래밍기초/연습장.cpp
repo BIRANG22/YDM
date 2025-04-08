@@ -52,8 +52,8 @@ namespace
 			x = LOWORD(lparam);
 			y = HIWORD(lparam);
 			std::cout << "왼쪽 클릭 위치: (" << x << ", " << y << ")" << std::endl;
-			
-			
+
+			simplegeo::g_GeoShapeManager.Remove(x, y);
 			simplegeo::g_GeoShapeManager.AddCircle(x, y, 20, RGB(255,0,0));
 
 			//HDC hdc = GetDC(hwnd); // 윈도우 전체에 대한 DC 획득
@@ -71,7 +71,8 @@ namespace
 			y = HIWORD(lparam);
 			std::cout << "오른쪽 클릭 위치: (" << x << ", " << y << ")" << std::endl;
 
-			simplegeo::g_GeoShapeManager.AddCircle(x, y, 20, RGB(0, 0, 255));
+			simplegeo::g_GeoShapeManager.Remove(x, y);
+			simplegeo::g_GeoShapeManager.AddRectangle(x-20, y-20, x+20, y+20, RGB(0, 0, 255));
 
 			/*HDC hdc = GetDC(hwnd);
 			const wchar_t* text = L"x";
@@ -79,7 +80,7 @@ namespace
 			ReleaseDC(hwnd, hdc);*/
 
 			InvalidateRect(hwnd, NULL, TRUE); // WM_PAINT 발생 요청
-			click = true;
+			//click = true;
 		}break;
 
 
@@ -88,6 +89,7 @@ namespace
 			PAINTSTRUCT ps;
 			HDC hdc = BeginPaint(hwnd, &ps);
 
+			FillRect(hdc, &ps.rcPaint, (HBRUSH)(COLOR_WINDOW + 1));
 			simplegeo::g_GeoShapeManager.Draw(hdc);  // 도형들 전체를 그림
 
 			EndPaint(hwnd, &ps);
@@ -179,6 +181,38 @@ int main()
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/*HWND hWnd = GetConsoleWindow();
+
+	std::cout << "콘솔 윈도우 핸들: " << hWnd << std::endl;
+	std::cout << "윈도우 핸들 : " << HWND() << std::endl;
+	
+
+	MSG msg = {};
+	while (WM_QUIT != msg.message)
+	{
+		//if (PeekMessage(&msg, hWnd, 0, 0, PM_REMOVE)) (Non-Blocking)
+		// GetMessage는 메시지가 없을 때까지 대기한다. (Blocking)
+		if (0 != GetMessage(&msg, hWnd, 0, 0) != 0) 
+		{
+			TranslateMessage(&msg);
+			DispatchMessage(&msg);
+		}
+		else
+		{
+			///HERE: GAME LOGIC UPATE & RENDERING
+			std::cout << "HERE: " << hWnd << std::endl;
+		}
+	}*/
 
 
 
