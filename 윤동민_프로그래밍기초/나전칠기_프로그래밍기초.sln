@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "나전칠기_프로그래밍기초", "나전칠기_프로그래밍기초\나전칠기_프로그래밍기초.vcxproj", "{BAEC00F4-81F3-4E07-9CF0-57657E472E75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루션 항목", "{9115AD70-4AC2-4968-8DCE-9252484CE3A4}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAEC00F4-81F3-4E07-9CF0-57657E472E75}.Debug|x64.ActiveCfg = Debug|x64
+		{BAEC00F4-81F3-4E07-9CF0-57657E472E75}.Debug|x64.Build.0 = Debug|x64
+		{BAEC00F4-81F3-4E07-9CF0-57657E472E75}.Debug|x86.ActiveCfg = Debug|Win32
+		{BAEC00F4-81F3-4E07-9CF0-57657E472E75}.Debug|x86.Build.0 = Debug|Win32
+		{BAEC00F4-81F3-4E07-9CF0-57657E472E75}.Release|x64.ActiveCfg = Release|x64
+		{BAEC00F4-81F3-4E07-9CF0-57657E472E75}.Release|x64.Build.0 = Release|x64
+		{BAEC00F4-81F3-4E07-9CF0-57657E472E75}.Release|x86.ActiveCfg = Release|Win32
+		{BAEC00F4-81F3-4E07-9CF0-57657E472E75}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {425AE4F5-07EC-49CD-AFAE-0DD4DA01E628}
+	EndGlobalSection
+EndGlobal
