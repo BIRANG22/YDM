@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour
     }
     public void Move(float horizontalInput)
     {
+        if (isDashing) return;
+
         Debug.Log("이동");
         float moveValue = horizontalInput * moveSpeed;
 
