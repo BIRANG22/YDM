@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\D2D\\D2DWorkspace\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C29E3FB1-19A2-4D8B-9D0C-8603342B18DA}|D2DEngineBase\\D2DEngineBase.vcxproj|C:\\D2D\\D2DWorkspace\\D2DEngineBase\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C29E3FB1-19A2-4D8B-9D0C-8603342B18DA}|D2DEngineBase\\D2DEngineBase.vcxproj|solutionrelative:D2DEngineBase\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C29E3FB1-19A2-4D8B-9D0C-8603342B18DA}|D2DEngineBase\\D2DEngineBase.vcxproj|C:\\D2D\\D2DWorkspace\\D2DEngineBase\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C29E3FB1-19A2-4D8B-9D0C-8603342B18DA}|D2DEngineBase\\D2DEngineBase.vcxproj|solutionrelative:D2DEngineBase\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0BAB391-CECF-4BBB-B474-E6A80F780F6A}|GameProject\\GameProject.vcxproj|C:\\D2D\\D2DWorkspace\\GameProject\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B0BAB391-CECF-4BBB-B474-E6A80F780F6A}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C29E3FB1-19A2-4D8B-9D0C-8603342B18DA}|D2DEngineBase\\D2DEngineBase.vcxproj|C:\\D2D\\D2DWorkspace\\D2DEngineBase\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C29E3FB1-19A2-4D8B-9D0C-8603342B18DA}|D2DEngineBase\\D2DEngineBase.vcxproj|solutionrelative:D2DEngineBase\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C29E3FB1-19A2-4D8B-9D0C-8603342B18DA}|D2DEngineBase\\D2DEngineBase.vcxproj|C:\\D2D\\D2DWorkspace\\D2DEngineBase\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C29E3FB1-19A2-4D8B-9D0C-8603342B18DA}|D2DEngineBase\\D2DEngineBase.vcxproj|solutionrelative:D2DEngineBase\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "pch.cpp",
+              "DocumentMoniker": "C:\\D2D\\D2DWorkspace\\D2DEngineBase\\pch.cpp",
+              "RelativeDocumentMoniker": "D2DEngineBase\\pch.cpp",
+              "ToolTip": "C:\\D2D\\D2DWorkspace\\D2DEngineBase\\pch.cpp",
+              "RelativeToolTip": "D2DEngineBase\\pch.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-29T11:39:47.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "pch.h",
+              "DocumentMoniker": "C:\\D2D\\D2DWorkspace\\D2DEngineBase\\pch.h",
+              "RelativeDocumentMoniker": "D2DEngineBase\\pch.h",
+              "ToolTip": "C:\\D2D\\D2DWorkspace\\D2DEngineBase\\pch.h",
+              "RelativeToolTip": "D2DEngineBase\\pch.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-29T11:39:41.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game.cpp",
+              "DocumentMoniker": "C:\\D2D\\D2DWorkspace\\D2DEngineBase\\Game.cpp",
+              "RelativeDocumentMoniker": "D2DEngineBase\\Game.cpp",
+              "ToolTip": "C:\\D2D\\D2DWorkspace\\D2DEngineBase\\Game.cpp",
+              "RelativeToolTip": "D2DEngineBase\\Game.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-29T11:37:39.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Game.h",
+              "DocumentMoniker": "C:\\D2D\\D2DWorkspace\\D2DEngineBase\\Game.h",
+              "RelativeDocumentMoniker": "D2DEngineBase\\Game.h",
+              "ToolTip": "C:\\D2D\\D2DWorkspace\\D2DEngineBase\\Game.h",
+              "RelativeToolTip": "D2DEngineBase\\Game.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-29T11:37:10.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\D2D\\D2DWorkspace\\GameProject\\main.cpp",
+              "RelativeDocumentMoniker": "GameProject\\main.cpp",
+              "ToolTip": "C:\\D2D\\D2DWorkspace\\GameProject\\main.cpp",
+              "RelativeToolTip": "GameProject\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-29T11:10:00.374Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
